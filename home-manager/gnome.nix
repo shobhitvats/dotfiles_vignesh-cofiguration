@@ -14,7 +14,7 @@
   services.gnome.core-utilities.enable = true;
   environment.gnome.excludePackages = with pkgs; [ 
     gnome-tour
-    gnome-weather
+    # gnome-weather
     geary
     gnome-contacts
     simple-scan

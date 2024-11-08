@@ -3,17 +3,17 @@
   imports = [
     ../../home-manager/bash.nix
     # ../../home-manager/hyprland.nix
-    ../../home-manager/gnome.nix
+    # ../../home-manager/gnome.nix
     ../../home-manager/nautilus
     ../../home-manager/spicetify.nix
     ../../home-manager/theme.nix
     ../../home-manager/xdg-desktop-entries.nix
   ];
 
-  services = {
-    network-manager-applet.enable = true;
-    blueman-applet.enable = true;
-  };
+  # services = {
+  #   network-manager-applet.enable = true;
+  #   blueman-applet.enable = true;
+  # };
 
   programs = {
     # - git
@@ -126,12 +126,12 @@
     gnome-text-editor
 
     ### - ags
-    bun
-    dart-sass
-    fd
-    wf-recorder
-    wayshot
-    swappy
+    # bun
+    # dart-sass
+    # fd
+    # wf-recorder
+    # wayshot
+    # swappy
 
     ### - Audio/Video Tools
     pavucontrol # - Audio Control
@@ -185,21 +185,23 @@
     nvtopPackages.full
 
     ### - Hyprland/Wayland Desktop Tools
-    wofi # - Launcher
-    batsignal # - Battery Notification Daemon
-    waybar # - Bar
-    mypkgs.waybar-mediaplayer
-    dunst # - Notifications Daemon
-    wl-clipboard # - Wayland Copy Paste
-    wlsunset # - Night Light
-    hyprshade # - Custom Shaders
-    hyprpicker # - Color Picker
-    cliphist # - Clipboard Manager
-    grim # - Screen Capture
-    slurp # - Select Screen Region
-    grimblast # - Screen Capture GUI
-    # kooha # - Screen Recorder GUI # - Not Working, use flatpak
+    # wofi # - Launcher
+    # batsignal # - Battery Notification Daemon
+    # waybar # - Bar
+    # mypkgs.waybar-mediaplayer
+    # dunst # - Notifications Daemon
+    # wl-clipboard # - Wayland Copy Paste
+    # wlsunset # - Night Light
+    # hyprshade # - Custom Shaders
+    # hyprpicker # - Color Picker
+    # cliphist # - Clipboard Manager
+    # grim # - Screen Capture
+    # slurp # - Select Screen Region
+    # grimblast # - Screen Capture GUI
+    # # kooha # - Screen Recorder GUI # - Not Working, use flatpak
     gsettings-desktop-schemas # - gsettings Schemas
+    wev # - Wayland Event Viewer
+    emote # - Emoji Picker
   ];
 
   # This value determines the home Manager release that your
