@@ -9,7 +9,7 @@
     # ../../nixos/fingerprint.nix
     ../../nixos/flatpak.nix
     ../../nixos/hyprland.nix
-    ../../nixos/intel_gpu.nix
+    # ../../nixos/intel_gpu.nix
     ../../nixos/locale.nix
     ../../nixos/networking.nix
     ../../nixos/sound.nix
@@ -102,15 +102,17 @@
     resources # - System Monitor
     libimobiledevice # - Wired Connection to iPhone
     ifuse # - Mount iPhone
+    riseup.riseup-vpn # - Riseup VPN
+
   ];
 
   # - Steam
-  # programs.steam = {
-  #   enable = true;
-  #   remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-  #   dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  #   localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-  # };
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
 
   # - Virtualisation
   virtualisation = {

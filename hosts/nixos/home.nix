@@ -2,7 +2,8 @@
 {
   imports = [
     ../../home-manager/bash.nix
-    ../../home-manager/hyprland.nix
+    # ../../home-manager/hyprland.nix
+    ../../home-manager/gnome.nix
     ../../home-manager/nautilus
     ../../home-manager/spicetify.nix
     ../../home-manager/theme.nix
@@ -168,14 +169,19 @@
     gnome.gnome-maps # - Maps
     mousam # - Weather
     gnome-calendar # - Calendar
+    blender
+    refind
 
     ### - Games
     gnome.gnome-mines # - Minesweeper
     smassh # - Typing Game
     gnome.gnome-klotski # - Puzzle Game
+    zeroad
+    zeroadPackages.zeroad-data
+
 
     ### - Graphics
-    pkgs.linuxKernel.packages.linux_zen.nvidia_x11_beta
+    linuxKernel.packages.linux_zen.nvidia_x11_beta
     nvtopPackages.full
 
     ### - Hyprland/Wayland Desktop Tools
