@@ -8,7 +8,8 @@
 
     # ../../nixos/fingerprint.nix
     ../../nixos/flatpak.nix
-    ../../nixos/hyprland.nix
+    # ../../nixos/hyprland.nix
+    ../../nixos/gnome.nix
     # ../../nixos/intel_gpu.nix
     ../../nixos/locale.nix
     ../../nixos/networking.nix
